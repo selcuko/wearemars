@@ -1,0 +1,153 @@
+*
+{
+	font-family: Century Gothic;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	position: fixed;
+	top: 
+	left:0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 40px 100px;
+	z-index: 100000;
+}
+
+header.sticky{
+	padding: 25px 100px;
+	background: #c4915c;
+
+}
+
+
+header .logo{
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+
+}
+
+
+header ul{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+left: 10%;
+}
+
+
+
+
+
+header ul li{
+	  position: relative;
+	  list-style: none;
+
+}
+
+header ul li a{
+
+	text-decoration: none;
+	transition: 0.6s;
+	margin: 0 20px;
+	position: relative;
+	color: #fff;
+	padding: 6px 15px;
+	border: 10px solid transparent  ;
+	border-radius: 40px;
+	letter-spacing: 2px;
+	font-weight: 500px
+
+
+
+} 
+
+ul  li :hover{
+	background-color: #FFFFFF;
+	color: #836855;
+	transition: 1s ease;
+
+
+}
+ul li .active a{
+	background-color: #FFFFFF;
+	color: #836855;
+}
+
+.services{
+  background: #836855;
+  text-align: center;
+
+}
+.services h1{
+  color:#FFFFFF;
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #FFFFFF;
+  font-size: 20px;
+  padding-bottom: 1px;
+  margin-top: 150px;
+}
+.cen{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+.service{
+  display: inline-block;
+  width: calc(100% / 3);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.service:hover{
+  background: #FFFFFF;
+}
+.service i{
+  color: #836855;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.service h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+  color:#FFFFFF;
+}
+.service .write {
+  color: #836855;
+  font-size: 15px;
+  font-weight: 500;
+}
+ 
+
+@media screen and (max-width: 800px) {
+  .service{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .service{
+    width: 100%;
+  }
+}
+<
+
+
+
