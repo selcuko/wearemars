@@ -1,16 +1,14 @@
-*
-{
-	font-family: Century Gothic;
+*{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	font-family: system-ui, sans-serif;
 }
 
 header{
 	position: fixed;
-	top: 
-	left:0;
-	width: 100%;
+	top:0; 
+	left:10;
+	width: 90%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -19,135 +17,451 @@ header{
 	z-index: 100000;
 }
 
+.backgroundone{
+	position: relative;
+	padding: 50px 100px;
+	min-height: 105vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image:url(https://iili.io/2Y1hdX.png); 
+	background-size: cover;
+}
+
+.backgroundone h4{
+	position: relative;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	right:140px;
+	top: -25vh;
+}
+.backgroundone p{
+	position:relative;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-size: 10px;
+	right: 385px;
+	top: -20vh;
+
+}
+
+.backgroundtwo{
+	position: relative;
+	padding: 50px 100px;
+	min-height: 25vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image:url(https://iili.io/2Y1MqN.png); 
+	background-size: cover;
+
+
+}
+
+.backgroundtwo h2{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-size: 35px
+}
+
+.backgroundtwo p{
+	position:relative;
+	color: yellow;
+	text-decoration: none;
+	text-align: center;
+	font-size: 25px;
+	right:  305px;
+	top: 25px
+
+}
+.backgroundthree{
+	position: relative;
+	padding: 50px 100px;
+	min-height: 120vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image:url(https://iili.io/2Y1Esp.png); 
+	background-size: cover;
+
+}
+
+.backgroundthree .youtube-video{
+	position: relative;
+	width: 1000px;
+	display: flex;
+	top: 30vh;
+	right: 30px;
+
+	
+}
+
+.backgroundthree .youtube-video .video-description{
+	width: 45%;
+	position:relative;
+	left: 30px;
+}
+
+.backgroundthree .youtube-video .video-description h2{
+color:white;
+font-size: 30px
+
+}
+.backgroundthree .youtube-video .video-description p{
+color:#f2bb66;
+font-size: 22px;
+
+
+}
+.backgroundthree .youtube-video .video-description a{
+color:#ff7f00;
+font-size: 18px;
+}
+
+.backgroundfour{
+	position: relative;
+	padding: 10px 10px;
+	min-height: 120vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-image:url(https://iili.io/2Y1Wgt.jpg); 
+	background-size: cover;
+}
+
+.backgroundfour .q h2{
+position: relative;
+color: silver;
+font-size: 32px;
+top: -10vh;
+width: 450px;
+
+}
+
+.backgroundfour .q {
+display: flex;
+justify-content: center;
+height: 600px;
+
+
+}
+
+
+
+.backgroundfour .q .asking .line .ask-warm{
+color: silver;
+font-size: 15px;
+display: flex;
+}
+
+.backgroundfour .q .asking{
+	position: relative; 
+	right: 18vh;
+	align-items: center;
+
+}
+
+.backgroundfour .q .asking .full-name{
+	
+	padding: 10px 45px;
+	background: #fff;
+	display: flex; 
+	border-radius: 25px;
+}
+
+.backgroundfour .q .asking .full-name .input-name{
+	position: relative;
+	border:none;
+	width: 60%;
+	left: 40px;
+	outline: none;
+	font-size: 16px;
+}
+
+.backgroundfour .q .asking  .email{
+	
+	padding: 10px 45px;
+	background: #fff;
+	display: flex; 
+	border-radius: 25px;
+	position: relative;
+	top: 5vh;
+}
+
+.backgroundfour .q .asking  .email  .input-email{
+	position: relative;
+	border:none;
+	width: 60%;
+	left: 40px;
+	outline: none;
+	font-size: 16px;
+}
+
+.backgroundfour .q .asking .your-message{
+	
+	padding: 40px 45px;
+	background: #fff;
+	border-radius: 25px;
+	position: relative;
+	top: 10vh;
+}
+
+.backgroundfour .q .asking  .your-message .input-message{
+	position: relative;
+	border:none;
+	height: 15vh;
+	width: 100%;
+	top: -30px;
+	outline: none;
+	font-size: 16px;
+	resize: none;
+
+}
+
+.backgroundfour .q .asking button{
+	background: none;
+	color:#ccc;
+	height: 60px;
+	border:3px solid orange;
+	left: 15vh;
+	font-size: 20px;
+	border-radius: 25px;
+	top: 15vh;
+	position: relative;
+	width: 40%;
+
+
+}
+
+ 
+
+.backgroundfour .q .subscribing{
+	position: relative;
+	left: 18vh;
+	align-items: center;
+}
+
+.backgroundfour .q .subscribing  h2{
+position: relative;
+color: silver;
+font-size: 32px;
+top: -10vh;
+
+}
+
+
+
+.backgroundfour .q .subscribing .line0 .ask-warm0{
+color: silver;
+font-size: 15px;
+display: flex;
+}
+
+.backgroundfour .q .subscribing  .full-name0{
+	
+	padding: 10px 45px;
+	background: #fff;
+	display: flex; 
+	border-radius: 25px;
+}
+
+.backgroundfour .q .subscribing  .full-name0 .input-name0{
+	position: relative;
+	border:none;
+	width: 70%;
+	left: 40px;
+	outline: none;
+	font-size: 16px;
+}
+
+.backgroundfour .q .subscribing  .email0{
+	
+	padding: 10px 45px;
+	background: #fff;
+	display: flex; 
+	border-radius: 25px;
+	position: relative;
+	top: 5vh;
+}
+
+.backgroundfour .q .subscribing .email0 .input-email0{
+	position: relative;
+	border:none;
+	width: 70%;
+	left: 40px;
+	outline: none;
+	font-size: 16px;
+}
+
+
+.backgroundfive{
+	position: relative;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image:url(https://iili.io/2Y1V1I.png); 
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.btn{
+  background: none;
+  border: 2px solid #000;
+  font-family: "montserrat",sans-serif;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  min-width: 200px;
+  margin: 10px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+}
+.btn:hover{
+  color: #fff;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn::before{
+  transform: scaleX(0);
+}
+
+.btn:hover::before{
+  transform: scaleX(1);
+}
+
+.header-container{
+
+}
+
+li{
+	display: inline-block;
+
+
+}
+
+li a{
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
+	font-weight: lighter;
+	font-size: 25px;
+	padding: 0 30px;
+
+
+
+}
+
+.cool-link::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: orange;
+	transition: width .3s
+}
+
+.cool-link:hover::after{
+	width: 100%;
+	transition: width .3s;
+
+}
+
+.cool-link-active::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: orange;
+	transition: width .3s
+}
+
+
 header.sticky{
-	padding: 25px 100px;
+	padding: 20px 100px;
 	background: #c4915c;
 
 }
 
+.s-m{
 
-header .logo{
+position: absolute;
+left: 70%;
+width: -1080px;
+
+
+  
+
+}
+
+.s-m .second-sm{
+	display: inline-block;
 	position: relative;
-	font-weight: 700;
-	color: #fff;
-	text-decoration: none;
-	font-size: 2em;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	transition: 0.6s;
-
+	top: 1vh;
 }
 
-
-header ul{
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-left: 10%;
-}
-
-
-
-
-
-header ul li{
-	  position: relative;
-	  list-style: none;
-
-}
-
-header ul li a{
-
-	text-decoration: none;
-	transition: 0.6s;
-	margin: 0 20px;
+.s-m .first-sm{
+	display: inline-block;
+	
 	position: relative;
-	color: #fff;
-	padding: 6px 15px;
-	border: 10px solid transparent  ;
-	border-radius: 40px;
-	letter-spacing: 2px;
-	font-weight: 500px
-
-
-
-} 
-
-ul  li :hover{
-	background-color: #FFFFFF;
-	color: #836855;
-	transition: 1s ease;
-
-
+	top: -1vh;
 }
-ul li .active a{
-	background-color: #FFFFFF;
-	color: #836855;
-}
+  
 
-.services{
-  background: #836855;
-  text-align: center;
-
-}
-.services h1{
-  color:#FFFFFF;
-  display: inline-block;
-  text-transform: uppercase;
-  border-bottom: 4px solid #FFFFFF;
+.s-m  a{
+  text-decoration: none;
   font-size: 20px;
-  padding-bottom: 1px;
-  margin-top: 150px;
-}
-.cen{
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  padding: 20px;
-}
-.service{
-  display: inline-block;
-  width: calc(100% / 3);
-  margin: 0 -2px;
-  padding: 20px;
-  box-sizing: border-box;
+  color: #040202;
+  min-width: 50px;
+  height: 50px;
+  text-align: center;
+  transition: 0.86s all;
+  line-height: 50px;
   cursor: pointer;
-  transition: 0.4s;
-}
-.service:hover{
-  background: #FFFFFF;
-}
-.service i{
-  color: #836855;
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-.service h2{
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin: 0;
-  color:#FFFFFF;
-}
-.service .write {
-  color: #836855;
-  font-size: 15px;
-  font-weight: 500;
-}
- 
+  background: #F8F8FF;
+  border-radius: 50%;
 
-@media screen and (max-width: 800px) {
-  .service{
-    width: 50%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .service{
-    width: 100%;
-  }
-}
-<
+  
 
+}
+.s-m  a:hover{
+  transform: scale(1.1);
+  color: #643813;
+}
+
+
+ .footer-link{
+ 	position: relative;
+ 	right: 40%;
+
+ }
 
 
