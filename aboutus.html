@@ -5,40 +5,68 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel = "stylesheet" type = "text/css" href= "css/main.css">
-	<link rel = "stylesheet" type = "text/css" href= "css/style.css">
-	<meta charset="utf-8">
+
+	<meta charset="utf-8"> 
 </head>
 
 
 <body>
 
-	<div class="backgroundone">
+	<div class="mainmain">
 	<header>
-		<div class="logo"> <img src="https://iili.io/2a8pgn.png"></div>
-		<div class="header-container">
-			<li><a href="indexmars.html" class="cool-link">Home</li></a>
-			<li><a href="aboutus.html" class="cool-link-active">About Us</li></a>
-			<li><a href="#" class="cool-link">Home</li></a>
-			<li><a href="#" class="cool-link">Home</li></a>
-			<li><a href="#" class="cool-link">Home</li></a>
-		</div>
+		<div id="logo"> <img src="https://iili.io/2a8pgn.png"></div>
+		<ul class="header-container">
+			<li class="headernav"><a href="indexmars.html" class="cool-link">Home</a></li>
+			<li class="headernav"><a href="#" class="cool-link-active">About Us</li></a>
+
+			<li id="galeryd" class="headernav"><a href="#" class="cool-link">Gallery <i class="fa fa-angle-down"></i></a>
+		<ul id="galerydd" class="dropdown">
+				<li><a href="#">Podcasts</li></a>
+				<li><a href="#">Videos</li></a>
+		</ul>
+			</li>
+
+			<li id="cusd" class="headernav"><a href="#" class="cool-link">Contact Us <i class="fa fa-angle-down"></i></a>
+			<ul id="cusdd" class="dropdown">
+				<li><a href="#">Submit art</li></a>
+				<li><a href="#">Submit story</li></a>
+		</ul>
+			</li>		
+		</ul>
 	</header>
 
+<div class="mainsentence">
 		<h4>"Empowering The Youth of Today to Become the Explorers of Tomorrow.<br>
-Making MARS Ours"</h4><p>Ethem Can was here :)))))</p>
+Making MARS Ours"</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra placerat cursus. Phasellus eget posuere ante. Aenean dapibus feugiat dui. Aenean condimentum nibh nec nibh blandit rutrum. Maecenas semper diam eget turpis varius, tincidunt finibus nunc ultrices. Morbi non tempus metus, eget finibus ipsum. Praesent et tincidunt mauris. Ut vehicula ut orci ac lobortis. Donec ut eros ligula. Vivamus commodo ligula dapibus, laoreet massa eu, pretium tellus. Vestibulum dictum nulla eget suscipit rutrum. Vivamus nisi nunc, euismod nec volutpat sit amet, mattis quis sapien.</p>
+	</div>
 	</div>
 
 
-	<div class="backgroundtwo"> <h2>“ Earth is the Cradle of Humanity , but one cannot
+
+	<div class="ourteam">
+
+
+	</div>
+
+
+
+
+	<div class="sentence"> <h2>“ Earth is the Cradle of Humanity , but one cannot
 remain in the cradle forever."</h2><p>Konstantin E.Tsiolkovsky</p></div>
 
 
 
-	<div class="backgroundfive">
+	<footer>
 		
-		<li class="footer-link"><a class="cool-link-active" href="#">Home</a><a class="cool-link" href="#">Podcasts</a></li>	
-		<li class="footer-link"><a class="cool-link" href="#">Sign-UP</a><a class="cool-link" href="#">Our Team</a></li>
-		<li class="footer-link"><a class="cool-link" href="#">Gallery</a><a class="cool-link" href="#">Get Involved</a></li>
+		<div class="nav-foot">
+			<li><a href="indexmars.html" class="cool-link-active">Home</li></a>
+			<li><a href="#" class="cool-link">About Us</li></a>
+			<li><a href="#" class="cool-link">Podcasts</li></a>
+			<li><a href="#" class="cool-link">Videos</li></a>
+			<li><a href="#" class="cool-link">Newsletter</li></a>
+			<li><a href="#" class="cool-link">Team</li></a>
+		</div>
+
 
 
 			<div class="s-m">
@@ -56,19 +84,37 @@ remain in the cradle forever."</h2><p>Konstantin E.Tsiolkovsky</p></div>
     <a class="fa fa-snapchat" href= "#" target= "_blank"></a>
     </ul>
 	</div>
-	</div>
+	</footer>
 	
 
-
-	<section class="banner"></section>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
 <script type="text/javascript">
-	window.addEventListener("scroll", function(){
+		window.addEventListener("scroll", function(){
 		var header = document.querySelector("header");
 		header.classList.toggle("sticky", window.scrollY > 0);
 	})
 </script>
+<script>
+	$(function(){
 
-<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+		$('#galeryd').on('mouseenter', function(){
+			$('#galerydd').delay(250).slideDown(350);
+		});
+
+		$('header').on('mouseleave', function(){
+			$('#galerydd').delay(250).slideUp(350);
+		});
+
+		$('#cusd').on('mouseenter', function(){
+			$('#cusdd').delay(250).slideDown(350);
+		});
+
+		$('header').on('mouseleave', function(){
+			$('#cusdd').delay(250).slideUp(350);
+		});
+	});
+</script>
 
 </body>
 </html>

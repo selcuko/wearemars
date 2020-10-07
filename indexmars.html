@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
 	<title>WeAreMars</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -12,38 +12,51 @@
 
 <body>
 
-	<div class="backgroundone">
+	<div class="mainmain">
 	<header>
-		<div class="logo"> <img src="https://iili.io/2a8pgn.png"></div>
-		<div class="header-container">
-			<li><a href="#" class="cool-link-active">Home</li></a>
-			<li><a href="aboutus.html" class="cool-link">About Us</li></a>
-			<li><a href="#" class="cool-link">Home</li></a>
-			<li><a href="#" class="cool-link">Home</li></a>
-			<li><a href="#" class="cool-link">Home</li></a>
-		</div>
-	</header>
+		<div id="logo"> <img src="https://iili.io/2a8pgn.png"></div>
+		<ul class="header-container">
+			<li class="headernav"><a href="#" class="cool-link-active">Home</a></li>
+			<li class="headernav"><a href="aboutus.html" class="cool-link">About Us</li></a>
 
+			<li id="galeryd" class="headernav"><a href="#" class="cool-link">Gallery <i class="fa fa-angle-down"></i></a>
+		<ul id="galerydd" class="dropdown">
+				<li><a href="#pd">Podcasts</li></a>
+				<li><a href="#yd">Videos</li></a>
+		</ul>
+			</li>
+
+			<li id="cusd" class="headernav"><a href="#" class="cool-link">Contact Us <i class="fa fa-angle-down"></i></a>
+			<ul id="cusdd" class="dropdown">
+				<li><a href="#">Submit art</li></a>
+				<li><a href="#">Submit story</li></a>
+		</ul>
+			</li>		
+		</ul>
+
+	</header>
+<div class="mainsentence">
 		<h4>"Empowering The Youth of Today to Become the Explorers of Tomorrow.<br>
-Making MARS Ours"</h4><p>Ethem Can was here :)))))</p>
+Making MARS Ours"</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra placerat cursus. Phasellus eget posuere ante. Aenean dapibus feugiat dui. Aenean condimentum nibh nec nibh blandit rutrum. Maecenas semper diam eget turpis varius, tincidunt finibus nunc ultrices. Morbi non tempus metus, eget finibus ipsum. Praesent et tincidunt mauris. Ut vehicula ut orci ac lobortis. Donec ut eros ligula. Vivamus commodo ligula dapibus, laoreet massa eu, pretium tellus. Vestibulum dictum nulla eget suscipit rutrum. Vivamus nisi nunc, euismod nec volutpat sit amet, mattis quis sapien.</p>
+	</div>
 	</div>
 
 
-	<div class="backgroundtwo"> <h2>“ Earth is the Cradle of Humanity , but one cannot
+	<div class="sentence"> <h2>“ Earth is the Cradle of Humanity , but one cannot
 remain in the cradle forever."</h2><p>Konstantin E.Tsiolkovsky</p></div>
 
 
-	<div class="backgroundthree">
-				<div class="podcast-description">
+	<div class="youtubeandpodcast">
+				<div id="pd" class="podcast-description">
 				<h2>Ne Mutlu Türküm Diyene!</h2> <br>
 				<p>İzmir’in dağlarında çiçekler açar.
 Altın güneş orda sırmalar saçar.
 Bozulmuş düşmanlar hep yel gibi kaçar.
 Yaşa Mustafa Kemal Paşa,yaşa;
-Adın yazılacak mücevher taşa.</p> <br>
+Adın yazılacak mücevher taşa.</p> <br> 
 				<a href="www.youtube.com">Our Youtube Channel</a>
 			</div>
-		  <div class="player">
+		  <div  id="yd" class="player">
     <div class="main">
       <audio></audio>
       <div class="thumbnail">
@@ -79,7 +92,7 @@ Adın yazılacak mücevher taşa.</p> <br>
     </div>
 </div>
   
-		<div class="youtube-video">
+		<div  class="youtube-video">
 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/3rd6QOQAqdI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<div class="video-description">
@@ -95,48 +108,48 @@ Adın yazılacak mücevher taşa.</p> <br>
 		</div>
 
 
-	<div class="backgroundfour">
+	<div class="mainform">
 		<div class="q">
-			<div class="asking">
+			<form class="asking">
 		<h2>Have a Question ?</h2>
 		<div class="line" style="display: flex;"><p class="ask-warm">Required Fields are marked with<p style="font-size:20px; color: red; position: relative; left: 5px ">*</p></p> </div>	
 		<div class="full-name">
 		
-			<p style="color: gold;
+			<p style="color: orange;
 font-size: 20px; ">Full Name<p style="color: red;
 		font-size: 24px; position: relative; left: 6px;"> *</p></p>
 	
-			<input class="input-name" type="text" name="" required="required" placeholder="Type Your Name">		
+			<input required  class="input-name" type="text" name="" placeholder="Type Your Name">		
 		</div>
 
 		<div class="email">
 		
-			<p style="color: gold;
+			<p style="color: orange;
 font-size: 20px; ">E-mail<p style="color: red;
 		font-size: 24px; position: relative; left: 6px;"> *</p></p>
 	
-			<input class="input-email" type="text" name="" required="required" placeholder="Type Your Name">		
+			<input required class="input-email" type="text" name="" placeholder="Type Your Name">		
 		</div>
 
 		<div class="your-message">
 		
-			<p style="color: gold;
+			<p style="color: orange;
 font-size: 20px; top: -30px; position: relative; text-align: center;">Type Your Message <p style="color: red;
-font-size: 24px; top: -56px; position: relative; left:48vh; ">*</p></p>
+font-size: 24px; top: -56px; position: relative; left:44vh; ">*</p></p>
 	
 			<textarea class="input-message"required="required" placeholder="Type Your Message Here"></textarea>	
 			</div>
+			<button class="btn"><p class="btnt">Submit</p></button>
+					
 
-			<button value="question" onclick="sendMessage()" type="button">Submit</button>		
-
-		</div>
+		</form>
 	
-			<div class="subscribing">
+			<form class="subscribing">
 					<h2>Subscribe to Our Newsletter</h2>
 		<div class="line0" style="display: flex;"><p class="ask-warm0">Required Fields are marked with<p style="font-size:20px; color: red; position: relative; left: 5px ">*</p></p> </div>	
 		<div class="full-name0">
 		
-			<p style="color: gold;
+			<p style="color: orange;
 font-size: 20px; ">Full Name<p style="color: red;
 		font-size: 24px; position: relative; left: 6px;"> *</p></p>
 	
@@ -145,25 +158,31 @@ font-size: 20px; ">Full Name<p style="color: red;
 
 		<div class="email0">
 		
-			<p style="color: gold;
+			<p style="color: orange;
 font-size: 20px; ">E-mail<p style="color: red;
 		font-size: 24px; position: relative; left: 6px;"> *</p></p>
 	
 			<input class="input-email0" type="text" name="" required="required" placeholder="Type Your Name">	
 
 		</div>
-   
-		</div>
+   			<button id="btn2" ><p class="btnt">Submit</p></button>
+		</form>
 	</div>
  
 	</div>
-<button class="btn">Submit</button>
 
-	<div class="backgroundfive">
+
+	<footer>
 		
-		<li class="footer-link"><a class="cool-link-active" href="#">Home</a><a class="cool-link" href="#">Podcasts</a></li>	
-		<li class="footer-link"><a class="cool-link" href="#">Sign-UP</a><a class="cool-link" href="#">Our Team</a></li>
-		<li class="footer-link"><a class="cool-link" href="#">Gallery</a><a class="cool-link" href="#">Get Involved</a></li>
+		<div class="nav-foot">
+			<li><a href="#" class="cool-link-active">Home</li></a>
+			<li><a href="aboutus.html" class="cool-link">About Us</li></a>
+			<li><a href="#" class="cool-link">Podcasts</li></a>
+			<li><a href="#" class="cool-link">Videos</li></a>
+			<li><a href="#" class="cool-link">Newsletter</li></a>
+			<li><a href="#" class="cool-link">Team</li></a>
+		</div>
+
 
 
 			<div class="s-m">
@@ -181,20 +200,12 @@ font-size: 20px; ">E-mail<p style="color: red;
     <a class="fa fa-snapchat" href= "#" target= "_blank"></a>
     </ul>
 	</div>
-	</div>
-	
-
-
-	<section class="banner"></section>
-<script type="text/javascript">
-	window.addEventListener("scroll", function(){
-		var header = document.querySelector("header");
-		header.classList.toggle("sticky", window.scrollY > 0);
-	})
-</script>
+	</footer>
 
 <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/code.js"></script>
+
+
 
 </body>
 </html>
